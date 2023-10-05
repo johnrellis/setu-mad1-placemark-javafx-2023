@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="placemark-console">
+    <output-path>$PROJECT_DIR$/out/artifacts/placemark_console</output-path>
+    <root id="root">
+      <element id="archive" name="placemark_console.jar">
+        <element id="module-output" name="placemark-console" />
+      </element>
+    </root>
+  </artifact>
+</component>
