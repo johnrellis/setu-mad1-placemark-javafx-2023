@@ -6,9 +6,24 @@ Code is not my own, simply configured it to run via gradle and tornadofx.
 
 Should run via gradle application run straight out of the box.
 
-```zsh
-./gradlew run
+```bash
+➜  setu-mad1-placemark-javafx-2023 git:(main) ./gradlew run
+
+> Task :compileKotlin
+w: file:///Users/johnrellis/temp/setu-mad1-placemark-javafx-2023/src/main/kotlin/org/setu/placemark/console/helpers/FileHelpers.kt:25:13 Condition 'inputStreamReader != null' is always 'true'
+w: file:///Users/johnrellis/temp/setu-mad1-placemark-javafx-2023/src/main/kotlin/org/setu/placemark/console/main/main.kt:5:10 Parameter 'args' is never used
+w: file:///Users/johnrellis/temp/setu-mad1-placemark-javafx-2023/src/main/kotlin/org/setu/placemark/console/views/PlacemarkView.kt:39:12 Condition 'placemark != null' is always 'true'
+w: file:///Users/johnrellis/temp/setu-mad1-placemark-javafx-2023/src/main/kotlin/org/setu/placemark/console/views/PlacemarkView.kt:61:13 Condition 'placemark != null' is always 'true'
+
+> Task :run
+Oct 05, 2023 5:03:01 PM tornadofx.Stylesheet$Companion detectAndInstallUrlHandler
+INFO: Installing CSS url handler, since it was not picked up automatically
+
+BUILD SUCCESSFUL in 10s
+2 actionable tasks: 2 executed
 ```
+
+# Intellij
 
 To run via intelliJ, ensure the TornadoFX plugin is installed.
 
@@ -38,4 +53,8 @@ In your run configuration, add to your VM options
 --module-path "/Users/johnrellis/java/javafx-sdk-17.0.8/lib" --add-modules javafx.controls,javafx.fxml
 ```
 
-Replacing the path with your javafx-sdk-17
+Replacing the path with your javafx-sdk-17.
+
+This is all to just load javafx libs when intellij runs, running with gradle handles this for you.
+
+We love gradle.
